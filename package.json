@@ -1,0 +1,25 @@
+{
+  "name": "ai-voice-assistant",
+  "version": "1.0.0",
+  "description": "AI Voice Assistant with ElevenLabs and Zapier Integration",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "demo": "node src/demo.js"
+  },
+  "keywords": [
+    "elevenlabs",
+    "zapier",
+    "mcp",
+    "voice-assistant",
+    "cursor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
