@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant with ElevenLabs and Zapier</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>AI Voice Assistant</h1>
+        <p class="tagline">Powered by ElevenLabs and Zapier Integration</p>
+    </header>
+
+    <div class="features">
+        <div class="feature-card">
+            <h3>ElevenLabs Voice Assistants</h3>
+            <p>Create advanced AI voice assistants using ElevenLabs' lifelike voices. These assistants can answer questions, have conversations, and provide helpful information.</p>
+            <p>Features include:</p>
+            <ul>
+                <li>Lifelike text-to-speech</li>
+                <li>Multiple voice options</li>
+                <li>Knowledge base integration</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3>Zapier Integration</h3>
+            <p>Connect your voice assistants to thousands of apps and services through Zapier. Automate tasks and extend your assistant's capabilities.</p>
+            <p>Integrations include:</p>
+            <ul>
+                <li>Gmail for email communication</li>
+                <li>Google Calendar for scheduling</li>
+                <li>Google Sheets for data tracking</li>
+                <li>And many more services</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3>Customizable Configuration</h3>
+            <p>Easily configure your assistants to fit your specific needs. Set up Zapier endpoints, choose voice options, and customize assistant behavior.</p>
+            <p>Configuration options:</p>
+            <ul>
+                <li>Custom Zapier MCP endpoint</li>
+                <li>Voice selection and parameters</li>
+                <li>System prompts and instructions</li>
+                <li>Knowledge base content</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="demo-section">
+        <h2>Zapier MCP Configuration</h2>
+        <p>Enter your Zapier MCP endpoint to configure the integration. This allows your voice assistants to connect with Zapier's services.</p>
+        
+        <div class="zapier-config">
+            <label for="zapierEndpoint">Zapier MCP Endpoint:</label>
+            <input type="text" id="zapierEndpoint" placeholder="https://actions.zapier.com/mcp/your-endpoint-id/sse">
+            <button class="button" onclick="updateZapierEndpoint()">Update Endpoint</button>
+        </div>
+
+        <p>Your current endpoint configuration is stored in your browser's local storage.</p>
+    </div>
+
+    <div class="demo-section">
+        <h2>Using in Cursor IDE</h2>
+        <p>This application is designed to be run in Cursor IDE with ElevenLabs and Zapier MCPs enabled. To run the demo:</p>
+        <ol>
+            <li>Clone the repository</li>
+            <li>Open in Cursor IDE</li>
+            <li>Make sure ElevenLabs and Zapier MCPs are enabled</li>
+            <li>Run <code>src/runMcpDemo.js</code></li>
+        </ol>
+        <p>Example code to create a voice assistant:</p>
+        <pre>const agent = await mcp_ElevenLabs_create_agent({
+  name: "Customer Service Assistant",
+  first_message: "Hello! How can I help you today?",
+  system_prompt: "You are a helpful customer service AI assistant.",
+  voice_id: "cgSgspJ2msm6clMCkdW9", // Adam voice
+  language: "en",
+  temperature: 0.7
+});</pre>
+    </div>
+
+    <div class="demo-section">
+        <h2>Getting Started</h2>
+        <p>To get started with using this framework for your own projects:</p>
+        <ol>
+            <li>Configure your Zapier MCP endpoint above</li>
+            <li>Clone the repository from GitHub</li>
+            <li>Follow the setup instructions in the README</li>
+            <li>Create your own voice assistants using the provided API</li>
+        </ol>
+        <a href="https://github.com/your-username/ai-voice-assistant" class="button">View on GitHub</a>
+    </div>
+
+    <footer>
+        <p>AI Voice Assistant with ElevenLabs and Zapier Integration</p>
+        <p>A demonstration of creating voice assistants with ElevenLabs and integrating them with Zapier services</p>
+    </footer>
+</body>
+</html> 
